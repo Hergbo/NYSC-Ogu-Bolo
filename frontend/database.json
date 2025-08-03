@@ -1,0 +1,64 @@
+{
+  "users": [
+    {
+      "id": "2455",
+      "surname": "Beatrice",
+      "middlename": "chika",
+      "firstname": "ola",
+      "statecode": "RV/254/2345",
+      "gender": "Male",
+      "email": "chika@gmail.com",
+      "password": "",
+      "phone": "091234567676",
+      "cdsgroup": "NAFDAC"
+    },
+    {
+      "id": "48b3",
+      "surname": "Abel",
+      "middlename": "Johnson",
+      "firstname": "Samuel",
+      "statecode": "RV/24B/1235",
+      "gender": "Female",
+      "email": "abel@gmail.com",
+      "password": "",
+      "phone": "08143564367",
+      "cdsgroup": "Charity"
+    },
+    {
+      "id": "548b",
+      "surname": "Agbo",
+      "middlename": "enation",
+      "firstname": "Joshua",
+      "statecode": "RV/254/2345",
+      "gender": "Male",
+      "email": "joshuahergbo@gmail.com",
+      "password": "",
+      "phone": "08166445609",
+      "cdsgroup": "NAFDAC"
+    },
+    {
+      "id": "ac82",
+      "surname": "Agbo",
+      "middlename": "okonkwo",
+      "firstname": "Joshua",
+      "statecode": "RV/25A/1597",
+      "gender": "Male",
+      "email": "joshuahergbo@gmail.com",
+      "password": "",
+      "phone": "08166445609",
+      "cdsgroup": "Charity"
+    },
+    {
+      "id": "5194",
+      "surname": "Hergbö",
+      "middlename": "chika",
+      "firstname": "Joshua",
+      "statecode": "Enugu",
+      "gender": "Male",
+      "email": "joshuahergbo@gmail.com",
+      "password": "",
+      "phone": "08166445609",
+      "cdsgroup": "NAFDAC"
+    }
+  ]
+}

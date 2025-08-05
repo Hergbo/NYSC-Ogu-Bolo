@@ -2,7 +2,9 @@ import axios from 'axios';
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import Popup from './Popup';
+import {config} from "dotenv"
 
+// config("")
 
 const gender = [
     "Male" , "Female"
@@ -36,7 +38,7 @@ const Register = () => {
     const handleSubmit = async (e) => {
         e.preventDefault(
             setIsOpen(true));
-        axios.post('http://localhost:3000/users', values)
+        axios.post(`${import.meta.env.VITE_SERVER_URL}/users/`, values)
         .then(res => {
             console.log(res);
             // navigate('/register')

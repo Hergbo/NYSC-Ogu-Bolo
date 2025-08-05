@@ -1,8 +1,9 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom';
+import {config} from "dotenv"
 
-
+// config()
 
 function Update() {
 
@@ -25,7 +26,7 @@ function Update() {
     // const  [data, setDate] = useState([])
     const { id } = useParams();
     useEffect(() => {
-        axios.get('http://localhost:3000/users/' + id)
+        axios.get(`${import.meta.env.VITE_SERVER_URL}/users/${id}`)
             .then(res => {
                 setValues(res.data);
             })
@@ -34,7 +35,7 @@ function Update() {
 
     const handleUpdate = (e) =>{
         e.preventDefault();
-        axios.put('http://localhost:3000/users/'+id, values)
+        axios.put(`${import.meta.env.VITE_SERVER_URL}/users/${id}`, values)
         .then(res => {
             console.log(res);
             navigate('/admin')

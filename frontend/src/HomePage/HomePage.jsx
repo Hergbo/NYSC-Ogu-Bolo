@@ -7,9 +7,10 @@ import Image4 from "../assets/Img/group2.png"
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import {config} from "dotenv"
 
-
-
+// config("")
+console.log(import.meta.env.VITE_SERVER_URL)
 const Content = [
   {
     id:1,

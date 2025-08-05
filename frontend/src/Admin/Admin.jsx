@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import {config} from "dotenv"
 
+// config("")
 
 function Admin() {
     const [data, setData] = useState([])
@@ -9,7 +11,7 @@ function Admin() {
     
 
     useEffect(() => {
-        axios.get('http://localhost:3000/users')
+        axios.get(`${import.meta.env.VITE_SERVER_URL}/users`)
         .then(res => setData(res.data))
         .catch(err => console.log(err));
     }, [])
@@ -17,7 +19,7 @@ function Admin() {
     const handleDelete = (id) => {
         const confirm = window.confirm("would you like to Delete?");
         if(confirm) {
-            axios.delete('http://localhost:3000/users/' + id)
+            axios.delete(`${import.meta.env.VITE_SERVER_URL}/users/${id}`)
             .then(res => {
                location.reload();
             }).catch(err => console.log(err));

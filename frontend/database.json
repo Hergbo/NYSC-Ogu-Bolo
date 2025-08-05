@@ -59,6 +59,18 @@
       "password": "",
       "phone": "08166445609",
       "cdsgroup": "NAFDAC"
+    },
+    {
+      "id": "96d2",
+      "surname": "Agbo",
+      "middlename": "okonkwo",
+      "firstname": "Joshua",
+      "statecode": "RV/254/2345",
+      "gender": "Male",
+      "email": "joshuahergbo@gmail.com",
+      "password": "",
+      "phone": "08166445609",
+      "cdsgroup": "NAFDAC"
     }
   ]
 }

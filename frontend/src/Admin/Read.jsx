@@ -2,14 +2,16 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom';
+import {config} from "dotenv"
 
+// config("")
 
 function Read() {
     const [data, setData] = useState([])
     const { id } = useParams();
 
     useEffect(() => {
-        axios.get('http://localhost:3000/users/' + id)
+        axios.get(`${import.meta.env.VITE_SERVER_URL}/users/${id}`)
         .then(res => {console.log (res.data); setData(res.data)})
         .catch(err => console.log(err));
     }, [])
